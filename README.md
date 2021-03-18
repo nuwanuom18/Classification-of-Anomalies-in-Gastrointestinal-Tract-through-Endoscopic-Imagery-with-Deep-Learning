@@ -54,7 +54,7 @@ A hybrid neural network model which is called SOM and BP are used in research [5
 
 A Conventional neural network is used in our desired system because it is recommended by the instructor and also, it’s beginner friendly.
 
-#### Theories / Technologies
+##### Theories / Technologies
 Research [3] has been performed using unbiased extensive cross dataset. In this work they said without these conditions automatic analysis is incomplete. Because of using cross dataset, evaluation metrics and machine learning plays a huge role in this research. They built five distinct machine learning models using global features and deep neural networks. 16 different key types can be classified using the models. Furthermore, they introduced
 
 performance hexagon using six performance metrics such as,
