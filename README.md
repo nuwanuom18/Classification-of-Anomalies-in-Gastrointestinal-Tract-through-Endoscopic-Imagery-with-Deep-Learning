@@ -1,5 +1,10 @@
 # Classification-of-Anomalies-in-Gastrointestinal-Tract-through-Endoscopic-Imagery-with-Deep-Learning
 
+## Team members
+* [Nuwan Abeynayake](https://github.com/nuwanuom18 "Nuwan Abeynayake")
+* [Ruwan S. Dayanada](https://github.com/ruwansdayananda "Ruwan S. Dayanada")
+* [Dakshitha Suriyaaratchie](https://github.com/dakshithas "Dakshitha Suriyaaratchie")
+
 ## Table of contents
 * [INTRODUCTION](#introduction)
 * [LITERATURE REVIEW](#literature-review)
