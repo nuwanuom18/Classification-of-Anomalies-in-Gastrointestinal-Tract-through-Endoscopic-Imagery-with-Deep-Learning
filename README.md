@@ -36,7 +36,7 @@ A pre trained Convolutional Neural Network has been used to implement the desire
 
 Related works to the desired system can be analyzed in many perspectives. Divisions like input dataset, theories and methodologies will be used to review related literature resources in this section.
 
-### Input Dataset
+##### Input Dataset
 
 In [3], an extensive image set was used by the related researches. The researchers in [4] used a relatively small but easily accessible dataset for public which is known as KVASIR. Also, the researchers of [5] were used a large number of colonoscopic images for their researches.
 
@@ -44,7 +44,7 @@ While research method in [5] achieved a very high rate of accuracy (99.42%) and 
 
 As expected, accuracy [5] and [4] are higher than [3]. Although, it’s obvious accuracy and succession of the model is highly dependent on the using dataset, we decided to use KVASIR dataset same as research team in [3] because it is recommended by the instructor and KVASIR is easily accessible and open dataset for public.
 
-### Methods / Workflows
+##### Methods / Workflows
 
 A cross dataset is used in research [3]. So, the research is done using the knowledge on cross dataset evaluation and evaluation metrics. Machine leaning has been played a huge role in this research.
 
@@ -54,7 +54,7 @@ A hybrid neural network model which is called SOM and BP are used in research [5
 
 A Conventional neural network is used in our desired system because it is recommended by the instructor and also, it’s beginner friendly.
 
-### Theories / Technologies
+#### Theories / Technologies
 Research [3] has been performed using unbiased extensive cross dataset. In this work they said without these conditions automatic analysis is incomplete. Because of using cross dataset, evaluation metrics and machine learning plays a huge role in this research. They built five distinct machine learning models using global features and deep neural networks. 16 different key types can be classified using the models. Furthermore, they introduced
 
 performance hexagon using six performance metrics such as,
@@ -75,14 +75,14 @@ This is done by using large number of colonoscopy images. It is mentioned that u
 
 ## METHODOLOGY
 
-### Approach
+#### Approach
 We used pre-trained CNN for transfer learning to extract important features because this is relatively small dataset (only 8000 images). The pretrained models that we used in this approach are ResNet-50 and VGG-19. The proposed approach of anomalies classification is based on the steps as described below. First, we preprocessed the dataset due to some reasons as described in IV-B. Then we used pretrained CNNs and added global average pooling (GAP) layer to both and then combined the extracted features as shown in Fig. 9 (2048 from ResNet50 and 512 from VGG19).
 
 ![Model Archetecture](./images/model%20archetecture.png)
 
 After we added more dense layers and dropout regularization (dropout value as 0.5) to reduce overfitting and finally added SoftMax layer to identify the most matching category of an image. This model was trained with Adam optimization and we used mini batch size as 64 for this CNN. We used popular categorical cross-entropy loss function as the loss function of this mode. After 15 epochs, about 4 hours of training, our CNN achieved over 94% accuracy on train dataset and over 80% accuracy on test dataset.
 
-### Preprocessing
+#### Preprocessing
 
 We resized each image in KVASIR dataset into 244 x 244 pixels because of three reasons, KVASIR dataset contains different size of images, Small size of images get small time to learn relative to large images and 224 x 224 shape images perform well on the models that we used to transfer learning. Sometimes we used to 96 x 96 as well because we did not have good GPUs, so we need faster learning.
 
