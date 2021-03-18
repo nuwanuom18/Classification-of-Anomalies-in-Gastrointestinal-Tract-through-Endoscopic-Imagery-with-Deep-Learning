@@ -23,7 +23,7 @@ A tiny camera attached to a flexible tube is utilized to apply imaging technique
 
 Deep-learning based techniques have become notable technique to resolve this gastrointestinal medical imaging issue with accurate disease identification. In this study, convolutional neural network models are trained using the relatively small KVASIR dataset. The KVASIR dataset consists of 4, 000 images, which were collected using standard endoscopy equipment from Olympus and Pentax the Department of Gastroenterology, Bairam Hospital, Vestre, Viken Hospital Trust, Norway. These images were annotated and verified by medical doctors including eight classes showing anatomical landmarks, pathological findings, or endoscopic procedures in the GI tract. The anatomical landmarks include Z-line, pylorus, and cecum, and pathological findings consist of esophagitis, polyps, and ulcerative colitis. Addition to these 6 classes dataset provides another two set of images related to removal of polyps ‘dyed and lifted polyp" and the "dyed resection margins". The dataset includes images of different resolutions from 720x576 up to 1920x1072 pixels and sorted in a manner where they are in separate folders named accordingly to the includes. In this, we try to train a model using the labeled samples of these images and tried to predict the class names of the unlabeled samples.
 
-![Example screenshot](./images/anomalies.png)
+![Anomalies](./images/anomalies.png)
 
 A pre trained Convolutional Neural Network has been used to implement the desired system. Two pre trained models has been used to achieve the desired solution.
 
@@ -73,7 +73,7 @@ This is done by using large number of colonoscopy images. It is mentioned that u
 ### Approach
 We used pre-trained CNN for transfer learning to extract important features because this is relatively small dataset (only 8000 images). The pretrained models that we used in this approach are ResNet-50 and VGG-19. The proposed approach of anomalies classification is based on the steps as described below. First, we preprocessed the dataset due to some reasons as described in IV-B. Then we used pretrained CNNs and added global average pooling (GAP) layer to both and then combined the extracted features as shown in Fig. 9 (2048 from ResNet50 and 512 from VGG19).
 
-![Example screenshot](./images/model archetecture.png)
+![Model Archetecture](./images/model%20archetecture.png)
 
 After we added more dense layers and dropout regularization (dropout value as 0.5) to reduce overfitting and finally added SoftMax layer to identify the most matching category of an image. This model was trained with Adam optimization and we used mini batch size as 64 for this CNN. We used popular categorical cross-entropy loss function as the loss function of this mode. After 15 epochs, about 4 hours of training, our CNN achieved over 94% accuracy on train dataset and over 80% accuracy on test dataset.
 
@@ -99,11 +99,11 @@ We got our best accuracy using ResNet-50 and VGG-19 followed by global average p
 
 Pre-trained models (ResNet-50 and VGG-19) followed by global average pooling layer can be used to feature extraction from these models and we used preprocessed images from GI dataset to reduce learning time. And also, Adam optimization and categorical cross-entropy loss function are used. The proposed CNN approach shows over 80% accuracy.
 
-![Transfer learning using VGG-19](./images/transfer learning using VGG-19 fig.png)
+![Transfer learning using VGG-19](./images/transfer%20learning%20using%20VGG-19%20fig.png)
 
-![Transfer learning using ResNet50 fig](./images/transfer learning using ResNet50 fig.png)
+![Transfer learning using ResNet50 fig](./images/transfer%20learning%20using%20ResNet50%20fig.png)
 
-![Transfer learning using ResNet50 and VGG-19](./images/transfer learning using ResNet50 and VGG-19 fig.png)
+![Transfer learning using ResNet50 and VGG-19](./images/transfer%20learning%20using%20ResNet50%20and%20VGG-19%20fig.png)
 
 ## REFERENCES
 
