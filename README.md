@@ -23,7 +23,7 @@ A tiny camera attached to a flexible tube is utilized to apply imaging technique
 
 Deep-learning based techniques have become notable technique to resolve this gastrointestinal medical imaging issue with accurate disease identification. In this study, convolutional neural network models are trained using the relatively small KVASIR dataset. The KVASIR dataset consists of 4, 000 images, which were collected using standard endoscopy equipment from Olympus and Pentax the Department of Gastroenterology, Bairam Hospital, Vestre, Viken Hospital Trust, Norway. These images were annotated and verified by medical doctors including eight classes showing anatomical landmarks, pathological findings, or endoscopic procedures in the GI tract. The anatomical landmarks include Z-line, pylorus, and cecum, and pathological findings consist of esophagitis, polyps, and ulcerative colitis. Addition to these 6 classes dataset provides another two set of images related to removal of polyps ‘dyed and lifted polyp" and the "dyed resection margins". The dataset includes images of different resolutions from 720x576 up to 1920x1072 pixels and sorted in a manner where they are in separate folders named accordingly to the includes. In this, we try to train a model using the labeled samples of these images and tried to predict the class names of the unlabeled samples.
 
-![Anomalies](./images/anomalies.png)
+![Example screenshot](./images/anomalies.png)
 
 A pre trained Convolutional Neural Network has been used to implement the desired system. Two pre trained models has been used to achieve the desired solution.
 
